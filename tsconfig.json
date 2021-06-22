@@ -2,6 +2,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "b2all-relative-time": [
+        "dist/b2all-relative-time/b2all-relative-time",
+        "dist/b2all-relative-time"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,

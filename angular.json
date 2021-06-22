@@ -3,5 +3,46 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "b2all-relative-time": {
+      "projectType": "library",
+      "root": "projects/b2all-relative-time",
+      "sourceRoot": "projects/b2all-relative-time/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/b2all-relative-time/tsconfig.lib.json",
+            "project": "projects/b2all-relative-time/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/b2all-relative-time/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/b2all-relative-time/src/test.ts",
+            "tsConfig": "projects/b2all-relative-time/tsconfig.spec.json",
+            "karmaConfig": "projects/b2all-relative-time/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/b2all-relative-time/tsconfig.lib.json",
+              "projects/b2all-relative-time/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "b2all-relative-time"
 }

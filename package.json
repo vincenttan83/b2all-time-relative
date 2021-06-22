@@ -1,5 +1,5 @@
 {
-  "name": "b2all-relative-time",
+  "name": "@b2allsolution/relative-time",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~11.2.14",
     "@angular/common": "~11.2.14",
@@ -23,6 +23,7 @@
     "zone.js": "~0.11.3"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~0.1102.13",
     "@angular/cli": "~11.2.14",
     "@angular/compiler-cli": "~11.2.14",
     "@types/jasmine": "~3.6.0",
@@ -35,9 +36,28 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.5.0",
+    "ng-packagr": "^11.0.0",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~4.1.5"
-  }
+  },
+  "description": "This library is time relative formatter for angular project.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincenttan83/b2all-time-relative.git"
+  },
+  "keywords": [
+    "time relative",
+    "date ago",
+    "due in",
+    "over due"
+  ],
+  "author": "Vincent Tan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vincenttan83/b2all-time-relative/issues"
+  },
+  "homepage": "https://github.com/vincenttan83/b2all-time-relative#readme"
 }
